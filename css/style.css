@@ -60,13 +60,12 @@
     left: 87.5%;
 }
 .row-1.field:nth-child(even),
-.row-3.field:nth-child(even) {
-    background-color: rgba(0,0,0,0.6);
-}
+.row-3.field:nth-child(even),
 .row-2.field:nth-child(odd),
-.row-4.field:nth-child(odd) {
+.row-4.field:nth-child(odd){
     background-color: rgba(0,0,0,0.6);
 }
+
 .fields-top .row-1.field:nth-child(even):after,
 .fields-top .row-2.field:nth-child(odd):after,
 .fields-top .row-3.field:nth-child(even):after {
