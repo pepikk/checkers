@@ -1,0 +1,139 @@
+.board {
+    width: 1100px;
+    height: 1100px;
+    background: url(http://danke.ua/upload/decors/whitewood_photo/whitewood_decor.jpg) repeat;
+    position: relative;
+    left: 50%;
+    margin-left: -550px;
+}
+.fields {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-sizing: border-box;
+    border: 5px solid #000;
+    width: 1000px;
+    height: 1000px;
+}
+.field {
+    width: 12.5%;
+    height: 25%;
+    position: absolute;
+}
+.row-1 {
+    top: 0;
+}
+.row-2 {
+    top: 25%;
+}
+.row-3 {
+    top: 50%;
+}
+.row-4 {
+    top: 75%;
+}
+.cell-1 {
+    left: 0;
+}
+.cell-2 {
+    left: 12.5%;
+}
+.cell-3 {
+    left: 25%;
+}
+.cell-4 {
+    left: 37.5%;
+}
+.cell-5 {
+    left: 50%;
+}
+.cell-6 {
+    left: 62.5%;
+}
+.cell-7 {
+    left: 75%;
+}
+.cell-8 {
+    left: 87.5%;
+}
+.row-1.field:nth-child(even),
+.row-3.field:nth-child(even) {
+    background-color: rgba(0,0,0,0.6);
+}
+.row-2.field:nth-child(odd),
+.row-4.field:nth-child(odd) {
+    background-color: rgba(0,0,0,0.6);
+}
+.fields-top .row-1.field:nth-child(even):after,
+.fields-top .row-2.field:nth-child(odd):after,
+.fields-top .row-3.field:nth-child(even):after {
+    content: '';
+    background-color: #8b1b1b;
+    border-radius: 50%;
+    display: block;
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+    box-shadow: 0 5px 0 0 #6c1717;
+}
+.fields-bottom .row-4.field:nth-child(odd):after,
+.fields-bottom .row-3.field:nth-child(even):after,
+.fields-bottom .row-2.field:nth-child(odd):after {
+    content: '';
+    background-color: #f3dcc7;
+    border-radius: 50%;
+    display: block;
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-top: 8%;
+    box-shadow: 0 5px 0 0 #baa396;
+}
+.fields-top {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+}
+.fields-bottom {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    left: 0;
+}
+span {
+    position: absolute;
+    font-size: 34px;
+    font-weight: 600;
+}
+.fields-top .row-1 .letter {
+    transform: translateY(-150%);
+    left: 50%;
+    margin-left: -17px;
+    top: 0;
+
+}
+.fields-top .cell-1 span,
+.fields-bottom .cell-1 span{
+    transform: translateX(-200%);
+    top: 35%;
+
+}
+.fields-bottom .row-4 .letter {
+    transform: translateY(35%);
+    left: 50%;
+    margin-left: -17px;
+    top: 100%;
+}
+.fields-top .cell-8 span,
+.fields-bottom .cell-8 span {
+    left:100%;
+    transform: translateX(100%);
+    top: 35%;
+}
